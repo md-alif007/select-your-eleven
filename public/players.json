@@ -1,0 +1,98 @@
+[
+  {
+    "cricketer-image": "https://i.ibb.co.com/v6Wwg6Hx/sakib.jpg",
+    "cricketer-name": "Shakib Al Hasan",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "All Rounder",
+    "cricketer-playing-style": "Left hand batsman, Slow left-arm orthodox bowler",
+    "cricketer-price": 85000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/gLVTPBx5/tamim.jpg",
+    "cricketer-name": "Tamim Iqbal",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Batsman",
+    "cricketer-playing-style": "Left hand batsman",
+    "cricketer-price": 72000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/TMVCMKmT/Untitled.jpg",
+    "cricketer-name": "Mushfiqur Rahim",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Wicket Keeper",
+    "cricketer-playing-style": "Right hand batsman",
+    "cricketer-price": 70000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/0RVTdJxz/mahmud.jpg",
+    "cricketer-name": "Mahmudullah Riyad",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "All Rounder",
+    "cricketer-playing-style": "Right hand batsman, Off-spin bowler",
+    "cricketer-price": 65000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/KzG9tnfy/mustafiz.jpg",
+    "cricketer-name": "Mustafizur Rahman",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Bowler",
+    "cricketer-playing-style": "Left arm fast bowler",
+    "cricketer-price": 68000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/Dgz2T1Yv/liton.jpg",
+    "cricketer-name": "Litton Das",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Wicket Keeper Batsman",
+    "cricketer-playing-style": "Right hand batsman",
+    "cricketer-price": 60000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/LX6md06Q/miraz.jpg",
+    "cricketer-name": "Mehidy Hasan Miraz",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "All Rounder",
+    "cricketer-playing-style": "Right hand batsman, Off-spin bowler",
+    "cricketer-price": 58000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/HL0FhH5v/taskin.jpg",
+    "cricketer-name": "Taskin Ahmed",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Bowler",
+    "cricketer-playing-style": "Right arm fast bowler",
+    "cricketer-price": 55000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/gFdd0S8q/sarkar.jpg",
+    "cricketer-name": "Soumya Sarkar",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "All Rounder",
+    "cricketer-playing-style": "Left hand batsman, Medium pace bowler",
+    "cricketer-price": 50000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/8Ld6NR9S/shanto.jpg",
+    "cricketer-name": "Najmul Hossain Shanto",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Batsman",
+    "cricketer-playing-style": "Left hand batsman",
+    "cricketer-price": 52000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/xt0pPmgd/shorif.jpg",
+    "cricketer-name": "Shoriful Islam",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "Bowler",
+    "cricketer-playing-style": "Left arm fast bowler",
+    "cricketer-price": 48000
+  },
+  {
+    "cricketer-image": "https://i.ibb.co.com/C3z43QBk/afif.jpg",
+    "cricketer-name": "Afif Hossain",
+    "cricketer-country": "Bangladesh",
+    "cricketer-role": "All Rounder",
+    "cricketer-playing-style": "Left hand batsman, Off-spin bowler",
+    "cricketer-price": 47000
+  }
+]
