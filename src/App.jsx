@@ -15,7 +15,7 @@ function App() {
 
   const [toggle, setToggle] = useState(true);
 
-  const [availabelBalance, setAvailableBalance] = useState(100000);
+  const [availabelBalance, setAvailableBalance] = useState(450000);
 
   return (
     <>
@@ -40,7 +40,7 @@ function App() {
       {
         toggle === true ?
           <Suspense fallback={<p>loading players data...</p>}>
-            <AvailablePlayers setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
+            <AvailablePlayers availabelBalance={availabelBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
           </Suspense> :
           <SelectedPlayers></SelectedPlayers>
       }

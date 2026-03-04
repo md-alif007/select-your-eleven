@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import userImg from '../../assets/user1.png'
 import flagImg from '../../assets/Group.png';
 
-const PlayerCard = ({ playerData ,setAvailableBalance }) => {
+const PlayerCard = ({ playerData, setAvailableBalance, availabelBalance }) => {
 
     const [isSelected, setIsSelected] = useState();
 
@@ -35,8 +35,13 @@ const PlayerCard = ({ playerData ,setAvailableBalance }) => {
                     <button
                         disabled={isSelected}
                         onClick={() => {
+                            const playerPrice = playerData.cricketer_price;
+                            if (availabelBalance < playerPrice) {
+                                alert("Not enough point");
+                                return;
+                            }
                             setIsSelected(true);
-                            setAvailableBalance(500);
+                            setAvailableBalance(availabelBalance - playerPrice);
                         }}
                         className="btn"
                     >
