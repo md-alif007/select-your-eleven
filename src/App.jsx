@@ -17,12 +17,20 @@ function App() {
 
   const [availabelBalance, setAvailableBalance] = useState(450000);
 
+  const [purchasedPlayer, setPurchasedPlayer] = useState([]);
+
+  // console.log(purchasedPlayer)
+
   return (
     <>
       <Navbar availabelBalance={availabelBalance}></Navbar>
 
       <div className='mx-auto w-11/12 flex justify-between m-5'>
-        <h1 className='font-bold text-2xl'>Available players</h1>
+        <h1 className='font-bold text-2xl'>
+          {
+            toggle === true ? "Available players" : `Selected Player (${purchasedPlayer.length}/6)`
+          }
+        </h1>
         <div className='font-bold'>
           <button onClick={() => setToggle(true)}
             className={`py-3 px-4 border border-gray-400 rounded-l-2xl border-r-0 
@@ -32,7 +40,7 @@ function App() {
           <button onClick={() => setToggle(false)}
             className={`py-3 px-4 border border-gray-400 rounded-r-2xl border-l-0
             ${toggle === false ? "bg-[#E7FE29]" : ""}`}>
-            Selected {0}
+            Selected {purchasedPlayer.length}
           </button>
         </div>
       </div>
@@ -40,10 +48,21 @@ function App() {
       {
         toggle === true ?
           <Suspense fallback={<p>loading players data...</p>}>
-            <AvailablePlayers availabelBalance={availabelBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
+            <AvailablePlayers
+              purchasedPlayer={purchasedPlayer}
+              setPurchasedPlayer={setPurchasedPlayer}
+              availabelBalance={availabelBalance}
+              setAvailableBalance={setAvailableBalance}
+              playersPromise={playersPromise}>
+            </AvailablePlayers>
           </Suspense> :
-          <SelectedPlayers></SelectedPlayers>
+          <SelectedPlayers purchasedPlayer={purchasedPlayer} setPurchasedPlayer={setPurchasedPlayer}></SelectedPlayers>
       }
+
+      {/* <SelectedPlayers
+        purchasedPlayer={purchasedPlayer}
+        setPurchasedPlayer={setPurchasedPlayer}>
+      </SelectedPlayers> */}
 
 
     </>
