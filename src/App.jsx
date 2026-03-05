@@ -19,6 +19,12 @@ function App() {
 
   const [purchasedPlayer, setPurchasedPlayer] = useState([]);
 
+  const removePlayer = (p) => {
+    const filteredData = purchasedPlayer.filter(ply => ply.cricketer_name !== p.cricketer_name);
+    setPurchasedPlayer(filteredData);
+    setAvailableBalance(availabelBalance + p.cricketer_price)
+  }
+
   // console.log(purchasedPlayer)
 
   return (
@@ -55,8 +61,13 @@ function App() {
               setAvailableBalance={setAvailableBalance}
               playersPromise={playersPromise}>
             </AvailablePlayers>
-          </Suspense> :
-          <SelectedPlayers purchasedPlayer={purchasedPlayer} setPurchasedPlayer={setPurchasedPlayer}></SelectedPlayers>
+          </Suspense>
+          :
+          <SelectedPlayers
+            purchasedPlayer={purchasedPlayer}
+            setPurchasedPlayer={setPurchasedPlayer}
+            removePlayer={removePlayer}>
+          </SelectedPlayers>
       }
 
       {/* <SelectedPlayers

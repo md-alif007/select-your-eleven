@@ -1,8 +1,13 @@
 import React from 'react';
 import deleteImg from '../../assets/Vector.png';
 
-const SelectedCard = ({ player }) => {
-    console.log(player);
+const SelectedCard = ({ player ,removePlayer }) => {
+    // console.log();
+
+    const handleRemove = () => {
+        removePlayer(player)
+    }
+
     return (
         <div className='flex justify-between items-center border border-gray-400 p-3 rounded-2xl mb-1'>
             <div className='flex items-center'>
@@ -14,7 +19,7 @@ const SelectedCard = ({ player }) => {
                     <h1>{player.cricketer_role}</h1>
                 </div>
             </div>
-            <div>
+            <div onClick={handleRemove}>
                 <img src={deleteImg} alt="" />
             </div>
         </div>
